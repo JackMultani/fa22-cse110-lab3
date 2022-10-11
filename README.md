@@ -1,3 +1,2 @@
-# Lab 2 - Starter
-https://jackmultani.github.io/Lab2_Starter/
-test
+# Lab 3
+https://jackmultani.github.io/fa22-cse110-lab3/
