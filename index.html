@@ -35,8 +35,23 @@
       <br />
     </nav>
     <hr />
-    <h3>Attendance</h3>
-    <section>
+    <h2>Table of Contents</h2>
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished">Unfinished Business</a></li>
+        <li><a href="#finished">New Business</a></li>
+        <li><a href="#vote">Vote on App's Purpose</a></li>
+        <li><a href="#ideas1">Business Ideas for Next Time</a></li>
+        <li><a href="#time">Time of Meetings</a></li>
+        <li><a href="#summary">Summary of Meeting with Video/Audio</a></li>
+        <li><a href="#comments">Comments/Questions/Concerns</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <section id="attendance">
+      <h3>Attendance</h3>
       <details>
         <summary>View Attendance</summary>
         <p>Jack M.</p>
@@ -44,8 +59,8 @@
         <p>LeBron J.</p>
       </details>
     </section>
-    <h3>Agenda</h3>
-    <section>
+    <section id="agenda">
+      <h3>Agenda</h3>
       <ul>
         <li>Ideas for app (App type, purpose, frameworks, etc.)</li>
         <li>User Story Creation</li>
@@ -53,8 +68,8 @@
       </ul>
     </section>
 
-    <h3>Unfinished Business</h3>
-    <section>
+    <section id="unfinished">
+      <h3>Unfinished Business</h3>
       <div>
         The following items were left <b>unfinished from last meeting </b> and
         need to be addressed in this order:
@@ -76,8 +91,8 @@
       />
     </section>
 
-    <h3>New Business</h3>
-    <section>
+    <section id="finished">
+      <h3>New Business</h3>
       <p>
         As listed in the last section, there seems to be a lot of unfinished
         business to talk about.
@@ -95,8 +110,8 @@
         <li>Sprint Planning</li>
       </ul>
     </section>
-    <h3>Vote on App Purpose (Absent Members Only)</h3>
-    <section>
+    <section id="vote">
+      <h3>Vote on App Purpose (Absent Members Only)</h3>
       <p>
         If you were absent from the Brainstorming session, please vote on the
         app's purpose below. You may also enter your own idea in the empty box.
@@ -116,8 +131,8 @@
       </fieldset>
     </section>
 
-    <h3>Business Ideas for Next Time</h3>
-    <section>
+    <section id="ideas1">
+      <h3>Business Ideas for Next Time</h3>
       <p>
         Write in any business ideas you would like to discuss for the next
         meeting below. For ideas, visit this
@@ -134,8 +149,8 @@
       </datalist>
     </section>
 
-    <h3>Time of Meetings</h3>
-    <section>
+    <section id="time">
+      <h3>Time of Meetings</h3>
       <p>Are you okay with the time we are currently meeting at?</p>
       <select name="times" id="times">
         <option value="">No preference</option>
@@ -143,22 +158,24 @@
         <option value="cat">No</option>
       </select>
     </section>
-    <h3>Summary of Video with Audio Supplement</h3>
-    <p>
-      The below 30 second video sums up the meeting. There is also an audio
-      recording of the video.
-    </p>
-    <p><b>Video:</b></p>
-    <video width="320" height="240" controls>
-      <source src="lab2vid.mp4" type="video/mp4" />
-    </video>
-    <br />
-    <p><b>Audio:</b></p>
-    <audio controls>
-      <source src="lab2vid.mp4" type="video/mp4" />
-    </audio>
+    <h3>Summary of Meeting with Video/Audio</h3>
+    <section id="summary">
+      <p>
+        The below 30 second video sums up the meeting. There is also an audio
+        recording of the video.
+      </p>
+      <p><b>Video:</b></p>
+      <video width="320" height="240" controls>
+        <source src="lab2vid.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <p><b>Audio:</b></p>
+      <audio controls>
+        <source src="lab2vid.mp4" type="video/mp4" />
+      </audio>
+    </section>
     <h3>Comments/Questions/Concerns</h3>
-    <section>
+    <section id="comments">
       <span
         >Below are spaces where you can leave any comments, questions, or
         concerns.</span
