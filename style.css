@@ -1,0 +1,115 @@
+  body { /* changes the background color of webpage */
+    background: rgb(245, 245, 245);
+  }
+  h1{ /* converts the h1 header into a navigation bar */
+    color: hsl(0, 0%, 100%);
+    padding-top: 0.1in;
+    padding-bottom: 0.1in;
+    padding-left: 0.1in;
+    padding-right: 0.1in;
+    background: #6736B6;
+    position: sticky;
+    top: 0px;
+    
+  }
+
+  img{ /*sets the 1st image on page to be 200 x 200*/
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  ul, h2{ /* sets all text within ul and h2 to purple */
+    color:#6736B6;
+  }
+  li { /* converts Table of Contents into a row for navigation bar */
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    bottom: 100px;
+  }
+  nav { /* makes the Table of Contents text stick to page */
+    position: sticky;
+    top: 20px;
+    margin-left: 400px;
+  }
+  a:hover { /* changes text of Table of Contents text to white when hovered */
+    color: white;
+  }
+  p:active { /* changes text within p tags to gold when clicked on */
+    background-color: gold;
+  }
+  video { /* sets height and width of video */
+    height: 20vh;
+    width: 30vh;
+  }
+  @font-face { /* imports Lato as page's font */
+    font-family: "myFont";
+    src: url("/Lato/Lato-Regular.ttf");
+  }
+  * { /* sets all tags in webpage to use Lato as font */
+    font-family: "myFont";
+  }
+
+  .container { /* class selector that creates row gaps in nav tag components and starts text from very left */
+    display: "flex";
+    justify-content: "flex-start";
+    align-content: "flex-start";
+    row-gap: 10px;
+  }
+
+  #finished { /* id selector that creates a grid for the New Business section */
+    display:grid;
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-items: start;
+  }
+
+  @media screen and (width: 200px) { /* changes setting of navigation bar for devices with a width of 200px */
+    h3 {
+      border-radius: 5px;
+      border-color: black;
+      padding: .5em .5em .5em .5em;
+      margin: 30pt 10pt 10pt 10pt;
+      background-color: #6736B6;
+      width: 300px; 
+      color:hsl(0, 0%, 100%);
+      text-align: center;
+    }
+  }
+
+  p[title="bold"] { /* attribute selector that converts text of p tags with a title of 'bold' */
+    font-weight: bold;
+  }
+
+  ol li { /*descendant combinator that sets li tags to center and bold if they are a descendant of ol  */
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  section > h3 { /* child combinator that sets settings for h3 if h3 is within section */
+    border: solid;
+    border-width: 2px;
+    border-radius: 40px;
+    border-color: black;
+    padding: .5em .5em .5em .5em;
+    margin: 30pt 10pt 10pt 10pt;
+    background-color: #6736B6;
+    width: 300px; 
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+  }
+
+  p + video { /* general sibling combinator that sets border radius of video if video shares the same descendant as p */
+    border-radius: 30px;
+  }
+
+  h3 ~ img { /* adjacent sibling combinator that sets img border radius if h3 is adjacent to h3 in formatting and share the same ancestor */
+    border-radius: 30px;
+  }
+
+  section.container { /* sets text of sections to bold if they have the .container class */
+    font-weight: bold;
+  }
+
