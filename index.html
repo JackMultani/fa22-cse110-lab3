@@ -7,36 +7,22 @@
       href="https://www.nicepng.com/png/detail/820-8205745_nutrition-and-dietetics-circle-meeting-icon-png.png"
       rel="icon"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body> 
+    <style> /* internal CSS */
+      a{
+      color:gold;
+      font-weight: bold;
+      text-decoration: solid;
+      font-size: 1.1rem;
+      display: block; 
+      }
+    </style>
     <header>Lab 2 Part 1 | Meeting Minutes | Jack Multani</header>
-    <main>Below is a sample of a standard Meeting Minutes entry:</main>
+    <main style="font-weight: bold;">Below is a sample of a standard Meeting Minutes entry:</main> 
     <h1>Group 26 Brainstorm Session</h1>
-    <img
-      src="https://www.freeiconspng.com/thumbs/meeting-icon/meeting-icon-png-presentation-icon-board-meeting-icon-meeting-icon--4.png"
-      alt="mainimage"
-    />
-    <hr />
-    <h2>Topic - Brainstorming</h2>
-    <h2>10/5/2022</h2>
-    <h2>Duration: 10 minutes</h2>
-    <hr />
-    <h2>Links Referenced During Meeting</h2>
-    <nav>
-      <a href="https://www.codecademy.com/learn/learn-how-to-code"
-        >How to Code</a
-      >
-      <br />
-      <a href="https://www.javascript.com/">Javascript Page</a>
-      <br />
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-        >HTML Tutorial</a
-      >
-      <br />
-    </nav>
-    <hr />
-    <h2>Table of Contents</h2>
-    <nav>
+    <nav class="container">
       <ul>
         <li><a href="#attendance">Attendance</a></li>
         <li><a href="#agenda">Agenda</a></li>
@@ -45,11 +31,21 @@
         <li><a href="#vote">Vote on App's Purpose</a></li>
         <li><a href="#ideas1">Business Ideas for Next Time</a></li>
         <li><a href="#time">Time of Meetings</a></li>
-        <li><a href="#summary">Summary of Meeting with Video/Audio</a></li>
+        <li><a href="#summary">Summary</a></li>
         <li><a href="#comments">Comments/Questions/Concerns</a></li>
       </ul>
     </nav>
+    <img style="border-radius: 30px"
+      src="https://www.freeiconspng.com/thumbs/meeting-icon/meeting-icon-png-presentation-icon-board-meeting-icon-meeting-icon--4.png"
+      alt="mainimage"
+    />
     <hr />
+    <h2>Topic - Brainstorming</h2>
+    <h2>10/5/2022</h2>
+    <h2>Duration: 10 minutes</h2>
+
+    <hr />
+
     <section id="attendance">
       <h3>Attendance</h3>
       <details>
@@ -59,12 +55,14 @@
         <p>LeBron J.</p>
       </details>
     </section>
-    <section id="agenda">
+    <section id="agenda" class="container">
       <h3>Agenda</h3>
       <ul>
-        <li>Ideas for app (App type, purpose, frameworks, etc.)</li>
-        <li>User Story Creation</li>
-        <li>Sprint Planning</li>
+        <li style="display: flex">
+          Ideas for app (App type, purpose, frameworks, etc.)
+        </li>
+        <li style="display: flex">User Story Creation</li>
+        <li style="display: flex">Sprint Planning</li>
       </ul>
     </section>
 
@@ -103,7 +101,7 @@
         progress the both the
         <strong>production and planning phases of the app.</strong>
       </p>
-      <p>Below are the <i>New Business</i> ideas to be discussed:</p>
+      <p title="bold">Below are the <i>New Business</i> ideas to be discussed:</p>
       <ul>
         <li>Ideas for app (App type, purpose, frameworks, etc.)</li>
         <li>User Story Creation</li>
@@ -120,7 +118,7 @@
       </p>
       <fieldset>
         <input type="radio" id="gym" name="gym" value="gym" />
-        <label for="gym">Gym Buddy Finder</label>
+        <label for="gym" >Gym Buddy Finder</label>
         <br />
         <input type="checkbox" id="rooms" name="roomt" value="roomy" />
         <label for="rooms">Roommate Finder</label>
@@ -145,10 +143,10 @@
       <p>
         Write in any business ideas you would like to discuss for the next
         meeting below. For ideas, visit this
-        <a
+        <a style = "color: black"
           href="https://www.intelegain.com/app-ideas-for-startups-to-launch-in-2022/"
-          >link</a
-        >. Please write in your ideas before the end of <em>today</em>:
+          >link. Please write in your ideas before the end of <em>today</em>:</a
+        >
       </p>
       <input list="ideas" />
 
@@ -167,9 +165,9 @@
         <option value="cat">No</option>
       </select>
     </section>
-    <h3>Summary of Meeting with Video/Audio</h3>
     <section id="summary">
-      <p>
+      <h3>Summary of Meeting with Video/Audio</h3>
+      <p title=>
         The below 30 second video sums up the meeting. There is also an audio
         recording of the video.
       </p>
@@ -183,8 +181,8 @@
         <source src="lab2vid.mp4" type="video/mp4" />
       </audio>
     </section>
-    <h3>Comments/Questions/Concerns</h3>
     <section id="comments">
+      <h3>Comments/Questions/Concerns</h3>
       <span
         >Below are spaces where you can leave any comments, questions, or
         concerns.</span
@@ -193,13 +191,13 @@
         <div>Name:</div>
         <input type="text" id="name" name="name" />
         <div>Comment/Question/Concern:</div>
-        <textarea>Enter here</textarea>
+        <textarea style="color:purple; margin: 10px">Enter here</textarea>
       </form>
 
-      <button>Confirm</button>
+      <button style="border-radius:10px">Confirm</button>
     </section>
     <br />
-    <footer>
+    <footer style="font-weight: bold">
       Thank you for reading this session's Meeting Minutes entry. <br />
       If you have any questions, please contact the team lead.
     </footer>
